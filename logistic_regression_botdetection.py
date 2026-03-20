@@ -47,13 +47,13 @@ TWEET_FEATURES = [
 # load data through chunks due to size 
 def load_data(path, usecols=None, chunksize=None):
    if chunksize:
-    chunks = []
-    for chunk in pd.read_csv(path, usecols=usecols,
+      chunks = []
+      for chunk in pd.read_csv(path, usecols=usecols,
                             chunksize=chunksize,
                             encoding="utf-8", on_bad_lines="skip"):
-        chunks.append(chunk)
-        return pd.concat(chunks, ignore_index=True)
-    else:
-        return pd.read_csv(path, usecols=usecols, encoding="utf-8", on_bad_lines="skip")
+         chunks.append(chunk)
+      return pd.concat(chunks, ignore_index=True)
+   else:
+      return pd.read_csv(path, usecols=usecols, encoding="utf-8", on_bad_lines="skip")
 
 
