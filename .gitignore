@@ -4,4 +4,10 @@ __pycache__/
 .DS_Store
 *.pyc
 *.joblib
+<<<<<<< HEAD
 twitter_bot_detection.pptx
+=======
+*.pt
+*.json
+sklearn-env/
+>>>>>>> 98c64cd25eb0c9913ef0c74e3e445e3ccd66d8ab
